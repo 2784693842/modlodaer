@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7192F03E-7500-4AA7-8E4F-144154D92991}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CSTI_LuaActionSupport</RootNamespace>
+    <AssemblyName>CSTI_LuaActionSupport</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\Card Survival Tropical Island v1.05s\Card Survival - Tropical Island_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx" />
+    <Reference Include="System">
+      <HintPath>F:\Card Survival Tropical Island v1.05s\Card Survival - Tropical Island_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>F:\Card Survival Tropical Island v1.05s\Card Survival - Tropical Island_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s\Card Survival - Tropical Island_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s\Card Survival - Tropical Island_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="--z__ReadOnlyArray.cs" />
+    <Compile Include="AllPatcher\CardActionPatcher.cs" />
+    <Compile Include="AllPatcher\DataNode.cs" />
+    <Compile Include="AllPatcher\LuaRegister.cs" />
+    <Compile Include="AllPatcher\ObjModifyPatcher.cs" />
+    <Compile Include="AllPatcher\OnGameLoad.cs" />
+    <Compile Include="AllPatcher\SavePatcher.cs" />
+    <Compile Include="CSTI_LuaActionSupport_ProcessedByFody.cs" />
+    <Compile Include="FxResources\System\Memory\SR.cs" />
+    <Compile Include="gfoidl\Base64\Base64.cs" />
+    <Compile Include="gfoidl\Base64\dll!-PrivateImplementationDetails-.cs" />
+    <Compile Include="gfoidl\Base64\EncodingType.cs" />
+    <Compile Include="gfoidl\Base64\ExceptionArgument.cs" />
+    <Compile Include="gfoidl\Base64\ExceptionRessource.cs" />
+    <Compile Include="gfoidl\Base64\IBase64.cs" />
+    <Compile Include="gfoidl\Base64\Internal\Array.cs" />
+    <Compile Include="gfoidl\Base64\Internal\Base64Encoder.cs" />
+    <Compile Include="gfoidl\Base64\Internal\Base64EncoderImpl.cs" />
+    <Compile Include="gfoidl\Base64\Internal\Base64UrlEncoder.cs" />
+    <Compile Include="gfoidl\Base64\ThrowHelper.cs" />
+    <Compile Include="Helper\CoroutineHelper.cs" />
+    <Compile Include="Helper\TryModifyPack.cs" />
+    <Compile Include="KeraLua\DelegateExtensions.cs" />
+    <Compile Include="KeraLua\Lua.cs" />
+    <Compile Include="KeraLua\LuaAlloc.cs" />
+    <Compile Include="KeraLua\LuaCompare.cs" />
+    <Compile Include="KeraLua\LuaDebug.cs" />
+    <Compile Include="KeraLua\LuaFunction.cs" />
+    <Compile Include="KeraLua\LuaGC.cs" />
+    <Compile Include="KeraLua\LuaHookEvent.cs" />
+    <Compile Include="KeraLua\LuaHookFunction.cs" />
+    <Compile Include="KeraLua\LuaHookMask.cs" />
+    <Compile Include="KeraLua\LuaKFunction.cs" />
+    <Compile Include="KeraLua\LuaOperation.cs" />
+    <Compile Include="KeraLua\LuaReader.cs" />
+    <Compile Include="KeraLua\LuaRegister.cs" />
+    <Compile Include="KeraLua\LuaRegistry.cs" />
+    <Compile Include="KeraLua\LuaStatus.cs" />
+    <Compile Include="KeraLua\LuaType.cs" />
+    <Compile Include="KeraLua\LuaWarnFunction.cs" />
+    <Compile Include="KeraLua\LuaWriter.cs" />
+    <Compile Include="KeraLua\NativeMethods.cs" />
+    <Compile Include="LuaCodeHelper\CardAccessBridge.cs" />
+    <Compile Include="LuaCodeHelper\CLR2Lua.cs" />
+    <Compile Include="LuaCodeHelper\CommonSimpleAccess.cs" />
+    <Compile Include="LuaCodeHelper\DataAccessTool.cs" />
+    <Compile Include="LuaCodeHelper\DataChangeHelper.cs" />
+    <Compile Include="LuaCodeHelper\DebugBridge.cs" />
+    <Compile Include="LuaCodeHelper\DeconstructHelper.cs" />
+    <Compile Include="LuaCodeHelper\EnumHelper.cs" />
+    <Compile Include="LuaCodeHelper\EnvDataAccessBridge.cs" />
+    <Compile Include="LuaCodeHelper\FuncFor1_0_5.cs" />
+    <Compile Include="LuaCodeHelper\GameStatAccessBridge.cs" />
+    <Compile Include="LuaCodeHelper\LuaEnum.cs" />
+    <Compile Include="LuaCodeHelper\LuaFuncAttribute.cs" />
+    <Compile Include="LuaCodeHelper\LuaInput.cs" />
+    <Compile Include="LuaCodeHelper\LuaRegistrable.cs" />
+    <Compile Include="LuaCodeHelper\LuaScriptRetValues.cs" />
+    <Compile Include="LuaCodeHelper\LuaTimer.cs" />
+    <Compile Include="LuaCodeHelper\MoniEnum.cs" />
+    <Compile Include="LuaCodeHelper\PackCollectionEnum.cs" />
+    <Compile Include="LuaCodeHelper\PackDictionaryEnumerable.cs" />
+    <Compile Include="LuaCodeHelper\SimpleAccessTool.cs" />
+    <Compile Include="LuaCodeHelper\SimpleObjAccess.cs" />
+    <Compile Include="LuaCodeHelper\SimpleUniqueAccess.cs" />
+    <Compile Include="LuaCodeHelper\TableHelper.cs" />
+    <Compile Include="LuaCodeHelper\TestCodeAttribute.cs" />
+    <Compile Include="LuaSupportRuntime.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="NLua\CheckType.cs" />
+    <Compile Include="NLua\ClassGenerator.cs" />
+    <Compile Include="NLua\CodeGeneration.cs" />
+    <Compile Include="NLua\DelegateGenerator.cs" />
+    <Compile Include="NLua\dll!--f__AnonymousType0.cs" />
+    <Compile Include="NLua\Event\DebugHookEventArgs.cs" />
+    <Compile Include="NLua\Event\HookExceptionEventArgs.cs" />
+    <Compile Include="NLua\Exceptions\LuaException.cs" />
+    <Compile Include="NLua\Exceptions\LuaScriptException.cs" />
+    <Compile Include="NLua\Extensions\LuaExtensions.cs" />
+    <Compile Include="NLua\Extensions\StringExtensions.cs" />
+    <Compile Include="NLua\Extensions\TypeExtensions.cs" />
+    <Compile Include="NLua\ILuaGeneratedType.cs" />
+    <Compile Include="NLua\Lua.cs" />
+    <Compile Include="NLua\LuaBase.cs" />
+    <Compile Include="NLua\LuaClassType.cs" />
+    <Compile Include="NLua\LuaFunction.cs" />
+    <Compile Include="NLua\LuaGlobalEntry.cs" />
+    <Compile Include="NLua\LuaGlobals.cs" />
+    <Compile Include="NLua\LuaHideAttribute.cs" />
+    <Compile Include="NLua\LuaMemberAttribute.cs" />
+    <Compile Include="NLua\LuaTable.cs" />
+    <Compile Include="NLua\LuaThread.cs" />
+    <Compile Include="NLua\LuaUserData.cs" />
+    <Compile Include="NLua\MetaFunctions.cs" />
+    <Compile Include="NLua\Method\EventHandlerContainer.cs" />
+    <Compile Include="NLua\Method\ExtractValue.cs" />
+    <Compile Include="NLua\Method\LuaClassHelper.cs" />
+    <Compile Include="NLua\Method\LuaDelegate.cs" />
+    <Compile Include="NLua\Method\LuaEventHandler.cs" />
+    <Compile Include="NLua\Method\LuaMethodWrapper.cs" />
+    <Compile Include="NLua\Method\MethodArgs.cs" />
+    <Compile Include="NLua\Method\MethodCache.cs" />
+    <Compile Include="NLua\Method\RegisterEventHandler.cs" />
+    <Compile Include="NLua\ObjectTranslator.cs" />
+    <Compile Include="NLua\ObjectTranslatorPool.cs" />
+    <Compile Include="NLua\ProxyType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Buffers\ArrayPool.cs" />
+    <Compile Include="System\Buffers\ArrayPoolEventSource.cs" />
+    <Compile Include="System\Buffers\DefaultArrayPool.cs" />
+    <Compile Include="System\Buffers\IMemoryOwner.cs" />
+    <Compile Include="System\Buffers\IPinnable.cs" />
+    <Compile Include="System\Buffers\MemoryHandle.cs" />
+    <Compile Include="System\Buffers\MemoryManager.cs" />
+    <Compile Include="System\Buffers\OperationStatus.cs" />
+    <Compile Include="System\Buffers\ReadOnlySequenceSegment.cs" />
+    <Compile Include="System\Buffers\Utilities.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnAttribute.cs" />
+    <Compile Include="System\ExceptionArgument.cs" />
+    <Compile Include="System\Memory.cs" />
+    <Compile Include="System\MemoryDebugView.cs" />
+    <Compile Include="System\MemoryExtensions.cs" />
+    <Compile Include="System\NUInt.cs" />
+    <Compile Include="System\Numerics\ConstantHelper.cs" />
+    <Compile Include="System\Numerics\Hashing\HashHelpers.cs" />
+    <Compile Include="System\Numerics\Register.cs" />
+    <Compile Include="System\Numerics\Vector.2.cs" />
+    <Compile Include="System\Numerics\Vector.cs" />
+    <Compile Include="System\Pinnable.cs" />
+    <Compile Include="System\ReadOnlyMemory.cs" />
+    <Compile Include="System\ReadOnlySpan.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IntrinsicAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsByRefLikeAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\Unsafe.cs" />
+    <Compile Include="System\Runtime\InteropServices\MemoryMarshal.cs" />
+    <Compile Include="System\Runtime\Versioning\NonVersionableAttribute.cs" />
+    <Compile Include="System\Span.cs" />
+    <Compile Include="System\SpanDebugView.cs" />
+    <Compile Include="System\SpanHelpers.cs" />
+    <Compile Include="System\SR.cs" />
+    <Compile Include="System\ThrowHelper.cs" />
+    <Compile Include="UIStruct\CustomUIManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FxResources.System.Buffers.SR.resources" />
+    <EmbeddedResource Include="FxResources.System.Numerics.Vectors.SR.resources" />
+    <EmbeddedResource Include="FxResources\System\Memory\SR.resources" />
+    <EmbeddedResource Include="gfoidl\Base64\Strings.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
