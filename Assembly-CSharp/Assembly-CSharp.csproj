@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3408506C-7DF4-4801-8E8B-BD953E33B63E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>F:\Card Survival Tropical Island v1.05s - 副本\Card Survival - Tropical Island_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionConfirmPopup.cs" />
+    <Compile Include="ActionHighlight.cs" />
+    <Compile Include="ActionModifier.cs" />
+    <Compile Include="ActionRange.cs" />
+    <Compile Include="ActionReport.cs" />
+    <Compile Include="ActionSubObjective.cs" />
+    <Compile Include="ActionTag.cs" />
+    <Compile Include="ActiveIfCheats.cs" />
+    <Compile Include="ActiveIfPhone.cs" />
+    <Compile Include="ActiveIfRecording.cs" />
+    <Compile Include="AddedDurabilityModifier.cs" />
+    <Compile Include="AffectedStatInfo.cs" />
+    <Compile Include="AlertLevels.cs" />
+    <Compile Include="AlertNotificationTypes.cs" />
+    <Compile Include="AmbienceEffectSettings.cs" />
+    <Compile Include="AmbienceImageEffect.cs" />
+    <Compile Include="AmbienceSettings.cs" />
+    <Compile Include="AmbientSounds.cs" />
+    <Compile Include="AmmoRecoveryOptions.cs" />
+    <Compile Include="AmtFeedbackInfo.cs" />
+    <Compile Include="AnimatedValue.cs" />
+    <Compile Include="ArmorValues.cs" />
+    <Compile Include="ArrayUtility.cs" />
+    <Compile Include="AsyncLoading.cs" />
+    <Compile Include="AudioSourcePool.cs" />
+    <Compile Include="BarMilestoneMarker.cs" />
+    <Compile Include="BasicSample.cs" />
+    <Compile Include="BlueprintBar.cs" />
+    <Compile Include="BlueprintConstructionPopup.cs" />
+    <Compile Include="BlueprintElement.cs" />
+    <Compile Include="BlueprintModelsScreen.cs" />
+    <Compile Include="BlueprintModelState.cs" />
+    <Compile Include="BlueprintResearchData.cs" />
+    <Compile Include="BlueprintResearchedPopup.cs" />
+    <Compile Include="BlueprintSaveData.cs" />
+    <Compile Include="BlueprintStage.cs" />
+    <Compile Include="BlueprintUnlockedPopup.cs" />
+    <Compile Include="BlueprintUsedIngredients.cs" />
+    <Compile Include="BobbingAnim.cs" />
+    <Compile Include="BodyLocation.cs" />
+    <Compile Include="BodyLocationFilter.cs" />
+    <Compile Include="BodyLocationModifiers.cs" />
+    <Compile Include="BodyLocationReportWeights.cs" />
+    <Compile Include="BodyLocations.cs" />
+    <Compile Include="BodyLocationTracking.cs" />
+    <Compile Include="BodyTemplate.cs" />
+    <Compile Include="BookmarkGraphics.cs" />
+    <Compile Include="BookmarkGroup.cs" />
+    <Compile Include="ButtonSounds.cs" />
+    <Compile Include="ButtonSoundsManager.cs" />
+    <Compile Include="CameraEffectSettings.cs" />
+    <Compile Include="CameraModeSwitch.cs" />
+    <Compile Include="CameraRatio.cs" />
+    <Compile Include="CamSize.cs" />
+    <Compile Include="CanvasSampleOpenFileImage.cs" />
+    <Compile Include="CanvasSampleOpenFileText.cs" />
+    <Compile Include="CanvasSampleOpenFileTextMultiple.cs" />
+    <Compile Include="CanvasSampleSaveFileImage.cs" />
+    <Compile Include="CanvasSampleSaveFileText.cs" />
+    <Compile Include="CardAction.cs" />
+    <Compile Include="CardBasedDropChanceModifier.cs" />
+    <Compile Include="CardComparer.cs" />
+    <Compile Include="CardCreationSettings.cs" />
+    <Compile Include="CardData.cs" />
+    <Compile Include="CardDataRef.cs" />
+    <Compile Include="CardDrop.cs" />
+    <Compile Include="CardDropWeightModReport.cs" />
+    <Compile Include="CardFanLayout.cs" />
+    <Compile Include="CardFilter.cs" />
+    <Compile Include="CardFilterGroup.cs" />
+    <Compile Include="CardFilterGroupButton.cs" />
+    <Compile Include="CardFilterRef.cs" />
+    <Compile Include="CardFiltersMenu.cs" />
+    <Compile Include="CardGeneralCondition.cs" />
+    <Compile Include="CardGraphics.cs" />
+    <Compile Include="CardInteractionTrigger.cs" />
+    <Compile Include="CardLine.cs" />
+    <Compile Include="CardModifications.cs" />
+    <Compile Include="CardNotifications.cs" />
+    <Compile Include="CardOnBoardCondition.cs" />
+    <Compile Include="CardOnBoardSubObjective.cs" />
+    <Compile Include="CardOnCardAction.cs" />
+    <Compile Include="CardOrTagRef.cs" />
+    <Compile Include="CardPileComparer.cs" />
+    <Compile Include="CardPooling.cs" />
+    <Compile Include="CardSaveData.cs" />
+    <Compile Include="CardSaveDataComparer.cs" />
+    <Compile Include="CardsDestroyedPopup.cs" />
+    <Compile Include="CardsDropCollection.cs" />
+    <Compile Include="CardSlot.cs" />
+    <Compile Include="CardStateChange.cs" />
+    <Compile Include="CardSwapButton.cs" />
+    <Compile Include="CardTabGroup.cs" />
+    <Compile Include="CardTag.cs" />
+    <Compile Include="CardTypes.cs" />
+    <Compile Include="CardUnlockConditions.cs" />
+    <Compile Include="CardVisualsManager.cs" />
+    <Compile Include="Chance.cs" />
+    <Compile Include="CharacterPerk.cs" />
+    <Compile Include="CharacterPortraitRef.cs" />
+    <Compile Include="CharacterScreen.cs" />
+    <Compile Include="CheatsManager.cs" />
+    <Compile Include="ChildFillRect.cs" />
+    <Compile Include="ClampedAttribute.cs" />
+    <Compile Include="ClashResults.cs" />
+    <Compile Include="ClashResultsReport.cs" />
+    <Compile Include="CloseOnClickFlagsReset.cs" />
+    <Compile Include="CloseOnClickOutside.cs" />
+    <Compile Include="CollectionDropInfo.cs" />
+    <Compile Include="CollectionDropReport.cs" />
+    <Compile Include="CollectionDropsSaveData.cs" />
+    <Compile Include="CompletableCheckNotifications.cs" />
+    <Compile Include="CompletableObject.cs" />
+    <Compile Include="ConditionalStatModifier.cs" />
+    <Compile Include="ContentDisplayer.cs" />
+    <Compile Include="ContentDisplayOptions.cs" />
+    <Compile Include="ContentPage.cs" />
+    <Compile Include="ContentPageDisplay.cs" />
+    <Compile Include="ContentPageLink.cs" />
+    <Compile Include="ContentSection.cs" />
+    <Compile Include="ContentSectionDisplay.cs" />
+    <Compile Include="ContinuousFeedback.cs" />
+    <Compile Include="ContinuousImageFeedback.cs" />
+    <Compile Include="CookingBarInfo.cs" />
+    <Compile Include="CookingCardStatus.cs" />
+    <Compile Include="CookingConditions.cs" />
+    <Compile Include="CookingConditionsCard.cs" />
+    <Compile Include="CookingRecipe.cs" />
+    <Compile Include="CoroutineController.cs" />
+    <Compile Include="CoroutineExtensions.cs" />
+    <Compile Include="CoroutineState.cs" />
+    <Compile Include="CreditsScript.cs" />
+    <Compile Include="CSVParser.cs" />
+    <Compile Include="DamageType.cs" />
+    <Compile Include="DamageTypeArmorModifier.cs" />
+    <Compile Include="DayTimeSettings.cs" />
+    <Compile Include="DebugDrawings.cs" />
+    <Compile Include="Delimiter.cs" />
+    <Compile Include="DelimiterExtensions.cs" />
+    <Compile Include="DetailedStatList.cs" />
+    <Compile Include="DetailedStatListElement.cs" />
+    <Compile Include="DG\Tweening\DOTweenAnimation.cs" />
+    <Compile Include="DG\Tweening\DOTweenAnimationExtensions.cs" />
+    <Compile Include="DG\Tweening\DOTweenCYInstruction.cs" />
+    <Compile Include="DG\Tweening\DOTweenModuleAudio.cs" />
+    <Compile Include="DG\Tweening\DOTweenModulePhysics2D.cs" />
+    <Compile Include="DG\Tweening\DOTweenModuleSprite.cs" />
+    <Compile Include="DG\Tweening\DOTweenModuleUI.cs" />
+    <Compile Include="DG\Tweening\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="DG\Tweening\DOTweenModuleUtils.cs" />
+    <Compile Include="DG\Tweening\DOTweenProShortcuts.cs" />
+    <Compile Include="DG\Tweening\ShortcutExtensionsTMPText.cs" />
+    <Compile Include="DifficultyRatingLabel.cs" />
+    <Compile Include="DismantleActionButton.cs" />
+    <Compile Include="DismantleActionInventoryVisibility.cs" />
+    <Compile Include="DismantleCardAction.cs" />
+    <Compile Include="DraggingPlane.cs" />
+    <Compile Include="DurabilitiesConditions.cs" />
+    <Compile Include="DurabilitiesTypes.cs" />
+    <Compile Include="DurabilityBasedDropChanceModifier.cs" />
+    <Compile Include="DurabilityChangeFeedback.cs" />
+    <Compile Include="DurabilityChangeFeedbackInfo.cs" />
+    <Compile Include="DurabilityConditions.cs" />
+    <Compile Include="DurabilityDropWeightModReport.cs" />
+    <Compile Include="DurabilityHidingOptions.cs" />
+    <Compile Include="DurabilityRequirements.cs" />
+    <Compile Include="DurabilityStat.cs" />
+    <Compile Include="DurabilityTextDisplay.cs" />
+    <Compile Include="DurabilityWeightValue.cs" />
+    <Compile Include="DynamicElementRef.cs" />
+    <Compile Include="DynamicFontText.cs" />
+    <Compile Include="DynamicLayoutSlot.cs" />
+    <Compile Include="DynamicViewExtraSpace.cs" />
+    <Compile Include="DynamicViewIndexButton.cs" />
+    <Compile Include="DynamicViewLayoutElement.cs" />
+    <Compile Include="DynamicViewLayoutElementPool.cs" />
+    <Compile Include="DynamicViewLayoutGroup.cs" />
+    <Compile Include="Encounter.cs" />
+    <Compile Include="EncounterDistanceChange.cs" />
+    <Compile Include="EncounterDistanceCondition.cs" />
+    <Compile Include="EncounterEnemyDamageReport.cs" />
+    <Compile Include="EncounterLogMessage.cs" />
+    <Compile Include="EncounterOptionButton.cs" />
+    <Compile Include="EncounterPlayerAction.cs" />
+    <Compile Include="EncounterPlayerDamageReport.cs" />
+    <Compile Include="EncounterPopup.cs" />
+    <Compile Include="EncounterResult.cs" />
+    <Compile Include="EncounterResultEffect.cs" />
+    <Compile Include="EncounterSaveData.cs" />
+    <Compile Include="EncounterStealthReport.cs" />
+    <Compile Include="EncounterVariable.cs" />
+    <Compile Include="EndgameLog.cs" />
+    <Compile Include="EndgameLogCategory.cs" />
+    <Compile Include="EndGameLogLine.cs" />
+    <Compile Include="EndgameMenu.cs" />
+    <Compile Include="EnemyAction.cs" />
+    <Compile Include="EnemyActionEffectCondition.cs" />
+    <Compile Include="EnemyActionSelectionInfo.cs" />
+    <Compile Include="EnemyActionSelectionReport.cs" />
+    <Compile Include="EnemyBodyLocation.cs" />
+    <Compile Include="EnemyBodyLocationSelectionReport.cs" />
+    <Compile Include="EnemySkillModifier.cs" />
+    <Compile Include="EnemyValue.cs" />
+    <Compile Include="EnemyValueBasedWeightModifier.cs" />
+    <Compile Include="EnemyValueNames.cs" />
+    <Compile Include="EnemyValuesModifiers.cs" />
+    <Compile Include="EnemyValuesWeightModReport.cs" />
+    <Compile Include="EnemyValueToStatModifier.cs" />
+    <Compile Include="EnemyWound.cs" />
+    <Compile Include="EnemyWoundBasedWeightModifier.cs" />
+    <Compile Include="EnemyWoundModifier.cs" />
+    <Compile Include="EnemyWoundSelectionReport.cs" />
+    <Compile Include="EnemyWoundsWeightModReport.cs" />
+    <Compile Include="EnvironmentCardDataRef.cs" />
+    <Compile Include="EnvironmentSaveData.cs" />
+    <Compile Include="EquipmentButton.cs" />
+    <Compile Include="EquipmentTag.cs" />
+    <Compile Include="ExampleControlledObjectBehaviour.cs" />
+    <Compile Include="ExclusiveCardOnBoardGroup.cs" />
+    <Compile Include="ExplorationBar.cs" />
+    <Compile Include="ExplorationPopup.cs" />
+    <Compile Include="ExplorationResult.cs" />
+    <Compile Include="ExplorationResultSaveData.cs" />
+    <Compile Include="ExplorationSaveData.cs" />
+    <Compile Include="ExtraColor.cs" />
+    <Compile Include="ExtraDurabilityChange.cs" />
+    <Compile Include="ExtraMath.cs" />
+    <Compile Include="FadeToBlackScreen.cs" />
+    <Compile Include="FadeToBlackTypes.cs" />
+    <Compile Include="FollowCursor.cs" />
+    <Compile Include="FollowWithinFrameTextFeedback.cs" />
+    <Compile Include="FontSet.cs" />
+    <Compile Include="FontSettings.cs" />
+    <Compile Include="FontsManager.cs" />
+    <Compile Include="ForceGameLoad.cs" />
+    <Compile Include="FPSCounter.cs" />
+    <Compile Include="FromStatChangeAction.cs" />
+    <Compile Include="FXMask.cs" />
+    <Compile Include="GameDataBase.cs" />
+    <Compile Include="GameLoad.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="Gamemode.cs" />
+    <Compile Include="GameModifierPackage.cs" />
+    <Compile Include="GameOptions.cs" />
+    <Compile Include="GameOverMenu.cs" />
+    <Compile Include="GameSaveData.cs" />
+    <Compile Include="GameSaveFile.cs" />
+    <Compile Include="GameStat.cs" />
+    <Compile Include="GameStates.cs" />
+    <Compile Include="GameTechInfo.cs" />
+    <Compile Include="GeneralCondition.cs" />
+    <Compile Include="GenericEncounterPlayerAction.cs" />
+    <Compile Include="GlobalCharacterInfo.cs" />
+    <Compile Include="GlobalSaveData.cs" />
+    <Compile Include="GraphicsManager.cs" />
+    <Compile Include="GUIDAttribute.cs" />
+    <Compile Include="GuideDisplayer.cs" />
+    <Compile Include="GuideEntry.cs" />
+    <Compile Include="GuideListPageDisplay.cs" />
+    <Compile Include="GuideManager.cs" />
+    <Compile Include="HeaderSizes.cs" />
+    <Compile Include="HeaderStyles.cs" />
+    <Compile Include="HoldButton.cs" />
+    <Compile Include="HoursDisplay.cs" />
+    <Compile Include="IconAndTextPair.cs" />
+    <Compile Include="ImageRetriever.cs" />
+    <Compile Include="IndexButton.cs" />
+    <Compile Include="InGameActionRef.cs" />
+    <Compile Include="InGameCardBase.cs" />
+    <Compile Include="InGameCardComparer.cs" />
+    <Compile Include="InGameDraggableCard.cs" />
+    <Compile Include="InGameEncounter.cs" />
+    <Compile Include="InGamePinData.cs" />
+    <Compile Include="InGameRefCardSaveData.cs" />
+    <Compile Include="InGameStat.cs" />
+    <Compile Include="InGameStatInfo.cs" />
+    <Compile Include="InGameTickCounter.cs" />
+    <Compile Include="InspectionPopup.cs" />
+    <Compile Include="InspectorReadOnlyAttribute.cs" />
+    <Compile Include="InterpolatedValue.cs" />
+    <Compile Include="InterpolatedValueOutOfRange.cs" />
+    <Compile Include="InventoryCardSaveData.cs" />
+    <Compile Include="InventorySlot.cs" />
+    <Compile Include="InventorySlotSaveData.cs" />
+    <Compile Include="JournalHelpButton.cs" />
+    <Compile Include="LanguageSetting.cs" />
+    <Compile Include="LayoutTest.cs" />
+    <Compile Include="LightSourceSettings.cs" />
+    <Compile Include="LineActionTypes.cs" />
+    <Compile Include="LinkedImages.cs" />
+    <Compile Include="LiquidContainerStates.cs" />
+    <Compile Include="LiquidContentCondition.cs" />
+    <Compile Include="LiquidDrop.cs" />
+    <Compile Include="LiquidScaling.cs" />
+    <Compile Include="LiquidTransferInteraction.cs" />
+    <Compile Include="LiquidTransferRules.cs" />
+    <Compile Include="LiquidTransfers.cs" />
+    <Compile Include="LiquidVisuals.cs" />
+    <Compile Include="LocalCounterEffect.cs" />
+    <Compile Include="LocalizationManager.cs" />
+    <Compile Include="LocalizedStaticText.cs" />
+    <Compile Include="LocalizedStaticTooltip.cs" />
+    <Compile Include="LocalizedString.cs" />
+    <Compile Include="LocalTickCounter.cs" />
+    <Compile Include="LocalTickCounterRef.cs" />
+    <Compile Include="LogSaveData.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="MaskFrameImageResizer.cs" />
+    <Compile Include="MBSingleton.cs" />
+    <Compile Include="MeleeClashResultsReport.cs" />
+    <Compile Include="MenuCardPreview.cs" />
+    <Compile Include="MenuCharacterButton.cs" />
+    <Compile Include="MenuGroup.cs" />
+    <Compile Include="MenuingHelper.cs" />
+    <Compile Include="MenuPerkButton.cs" />
+    <Compile Include="MenuPerkPreview.cs" />
+    <Compile Include="MenuSlotButton.cs" />
+    <Compile Include="MenuSoundManager.cs" />
+    <Compile Include="MiniTicksBehavior.cs" />
+    <Compile Include="MinMaxAttribute.cs" />
+    <Compile Include="MinMaxDisplay.cs" />
+    <Compile Include="MissingReqInfo.cs" />
+    <Compile Include="MissingStatInfo.cs" />
+    <Compile Include="MobilePlatformDetection.cs" />
+    <Compile Include="MouseWheelSensitivity.cs" />
+    <Compile Include="NewBlueprintContent.cs" />
+    <Compile Include="NewEquipmentContent.cs" />
+    <Compile Include="NewImprovementContent.cs" />
+    <Compile Include="NewInfoNotes.cs" />
+    <Compile Include="NewJournalContent.cs" />
+    <Compile Include="NonDrawingGraphic.cs" />
+    <Compile Include="NotificationFrequency.cs" />
+    <Compile Include="Objective.cs" />
+    <Compile Include="ObjectiveAnchor.cs" />
+    <Compile Include="ObjectiveCompletePopup.cs" />
+    <Compile Include="ObjectiveCondition.cs" />
+    <Compile Include="ObjectiveDisplay.cs" />
+    <Compile Include="ObjectiveNotification.cs" />
+    <Compile Include="ObjectiveNotificationFrequencies.cs" />
+    <Compile Include="ObjectiveNotificationSettings.cs" />
+    <Compile Include="ObjectiveSaveData.cs" />
+    <Compile Include="ObjectiveSubObjective.cs" />
+    <Compile Include="ObjectiveToggle.cs" />
+    <Compile Include="OpenLinkTest.cs" />
+    <Compile Include="OpenLogLocation.cs" />
+    <Compile Include="OptionalColorValue.cs" />
+    <Compile Include="OptionalFloatValue.cs" />
+    <Compile Include="OptionalIntValue.cs" />
+    <Compile Include="OptionalObjectValue.cs" />
+    <Compile Include="OptionalRangeValue.cs" />
+    <Compile Include="OptionalTextSettings.cs" />
+    <Compile Include="OptionalValue.cs" />
+    <Compile Include="OptionsMenu.cs" />
+    <Compile Include="OverTimeDurabilityChanges.cs" />
+    <Compile Include="ParticleUtilities.cs" />
+    <Compile Include="PassiveEffect.cs" />
+    <Compile Include="PassiveEffectsSaveData.cs" />
+    <Compile Include="PassiveHighlights.cs" />
+    <Compile Include="PercentAttribute.cs" />
+    <Compile Include="PerfDebug.cs" />
+    <Compile Include="PerkGroup.cs" />
+    <Compile Include="PerkTabGroup.cs" />
+    <Compile Include="PerkUnlockPopup.cs" />
+    <Compile Include="PieceOfInfo.cs" />
+    <Compile Include="PieceOfInfoDisplay.cs" />
+    <Compile Include="PinSaveData.cs" />
+    <Compile Include="PlayerBodyLocationSelectionReport.cs" />
+    <Compile Include="PlayerCharacter.cs" />
+    <Compile Include="PlayerCharacterSaveData.cs" />
+    <Compile Include="PlayerEncounterVariable.cs" />
+    <Compile Include="PlayerWound.cs" />
+    <Compile Include="PlayerWounds.cs" />
+    <Compile Include="PlayerWoundSelectionInfo.cs" />
+    <Compile Include="PlayerWoundSelectionReport.cs" />
+    <Compile Include="PromoCardsSpawner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyFieldSettings.cs" />
+    <Compile Include="PulsingButton.cs" />
+    <Compile Include="PulsingOutline.cs" />
+    <Compile Include="PulsingScale.cs" />
+    <Compile Include="RandomAffectCardsTypes.cs" />
+    <Compile Include="RandomAmbientSound.cs" />
+    <Compile Include="RandomRotation.cs" />
+    <Compile Include="RandomSoundPlay.cs" />
+    <Compile Include="RangedClashResultReport.cs" />
+    <Compile Include="RemoteCardStateChanges.cs" />
+    <Compile Include="RemoteDurabilityChanges.cs" />
+    <Compile Include="RemotePassiveEffect.cs" />
+    <Compile Include="RoundingMethods.cs" />
+    <Compile Include="SaveButton.cs" />
+    <Compile Include="SaveFileEditing.cs" />
+    <Compile Include="SaveMenu.cs" />
+    <Compile Include="SaveReplaceElement.cs" />
+    <Compile Include="SelectionToggle.cs" />
+    <Compile Include="SelfTriggeredAction.cs" />
+    <Compile Include="SelfTriggeredActionSaveData.cs" />
+    <Compile Include="SendBugReport.cs" />
+    <Compile Include="SetBookmarkButton.cs" />
+    <Compile Include="SFB\ExtensionFilter.cs" />
+    <Compile Include="SFB\IStandaloneFileBrowser.cs" />
+    <Compile Include="SFB\StandaloneFileBrowser.cs" />
+    <Compile Include="SFB\StandaloneFileBrowserWindows.cs" />
+    <Compile Include="SFB\WindowWrapper.cs" />
+    <Compile Include="ShowCharacterPortrait.cs" />
+    <Compile Include="SimpleCardSaveData.cs" />
+    <Compile Include="SimpleComparison.cs" />
+    <Compile Include="SimpleHitProbabilityModifier.cs" />
+    <Compile Include="SimpleObjectPool.cs" />
+    <Compile Include="SimpleSoundFade.cs" />
+    <Compile Include="SingleLineAttribute.cs" />
+    <Compile Include="SkippableCoroutines.cs" />
+    <Compile Include="SlotInfo.cs" />
+    <Compile Include="SlotSettings.cs" />
+    <Compile Include="SlotsTypes.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="SpawningLiquid.cs" />
+    <Compile Include="SpecialActionSet.cs" />
+    <Compile Include="SpecialEffectsManager.cs" />
+    <Compile Include="SpecialEnding.cs" />
+    <Compile Include="SpecialHeaderAttribute.cs" />
+    <Compile Include="StackActionStopConditions.cs" />
+    <Compile Include="StalenessData.cs" />
+    <Compile Include="StatAndFloatValue.cs" />
+    <Compile Include="StatAndVector2Value.cs" />
+    <Compile Include="StatBasedDropChanceModifier.cs" />
+    <Compile Include="StatConditionAttribute.cs" />
+    <Compile Include="StatDetailsPopup.cs" />
+    <Compile Include="StatDropChanceModOutOfRange.cs" />
+    <Compile Include="StatDropWeightModReport.cs" />
+    <Compile Include="StatEncounterResult.cs" />
+    <Compile Include="StatEnforcedPlayerAction.cs" />
+    <Compile Include="StatInfluenceInfo.cs" />
+    <Compile Include="StatInterruptionCondition.cs" />
+    <Compile Include="StatListTab.cs" />
+    <Compile Include="StatModification.cs" />
+    <Compile Include="StatModifier.cs" />
+    <Compile Include="StatModifierOptionsAttribute.cs" />
+    <Compile Include="StatModifierReport.cs" />
+    <Compile Include="StatModifierSource.cs" />
+    <Compile Include="StatSaveData.cs" />
+    <Compile Include="StatStatus.cs" />
+    <Compile Include="StatStatusGraphics.cs" />
+    <Compile Include="StatSubObjective.cs" />
+    <Compile Include="StatTimeOfDayModifier.cs" />
+    <Compile Include="StatTrendIndicator.cs" />
+    <Compile Include="StatTriggeredActionStatus.cs" />
+    <Compile Include="StatTriggerTypes.cs" />
+    <Compile Include="StatusActionBlocker.cs" />
+    <Compile Include="StatusAlertSettings.cs" />
+    <Compile Include="StatusDurationData.cs" />
+    <Compile Include="StatusEndgameLog.cs" />
+    <Compile Include="StatValueTrigger.cs" />
+    <Compile Include="StatVisibilityOptions.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="StringSaveReplace.cs" />
+    <Compile Include="SubObjective.cs" />
+    <Compile Include="SubObjectiveSaveData.cs" />
+    <Compile Include="SuccessChanceLabels.cs" />
+    <Compile Include="SynchronizeAnimations.cs" />
+    <Compile Include="TagFilterRef.cs" />
+    <Compile Include="TagOnBoardCondition.cs" />
+    <Compile Include="TagOnBoardSubObjective.cs" />
+    <Compile Include="Testing.cs" />
+    <Compile Include="TestingCoroutines.cs" />
+    <Compile Include="TestLocalizedString.cs" />
+    <Compile Include="TimeObjective.cs" />
+    <Compile Include="TimeOfDayStatModSource.cs" />
+    <Compile Include="TimeSpentFeedback.cs" />
+    <Compile Include="TimeValueTypes.cs" />
+    <Compile Include="Tooltip.cs" />
+    <Compile Include="TooltipButton.cs" />
+    <Compile Include="TooltipProvider.cs" />
+    <Compile Include="TooltipText.cs" />
+    <Compile Include="TrailerDays.cs" />
+    <Compile Include="TransferedDurabilities.cs" />
+    <Compile Include="TrendIndicatorAnimSettings.cs" />
+    <Compile Include="TutorialHighlightState.cs" />
+    <Compile Include="TutorialManager.cs" />
+    <Compile Include="TutorialStep.cs" />
+    <Compile Include="TypingInInputField.cs" />
+    <Compile Include="UIFeedback.cs" />
+    <Compile Include="UIFeedbackStepsBase.cs" />
+    <Compile Include="UIFeedbackStepsObjects.cs" />
+    <Compile Include="UIFeedbackStepsParticles.cs" />
+    <Compile Include="UIFeedbackText.cs" />
+    <Compile Include="UIFeedbackTextAndIcon.cs" />
+    <Compile Include="UIReorderableList.cs" />
+    <Compile Include="UIReorderableListElement.cs" />
+    <Compile Include="UniqueIDScriptable.cs" />
+    <Compile Include="UnityEngine\UI\SimpleLayoutGroup.cs" />
+    <Compile Include="UnityEngine\UI\VariableGridCell.cs" />
+    <Compile Include="UnityEngine\UI\VariableGridLayoutGroup.cs" />
+    <Compile Include="UnityExamplesBehaviour.cs" />
+    <Compile Include="UnlocksBugFixBackup.cs" />
+    <Compile Include="VersionText.cs" />
+    <Compile Include="VictoryCondition.cs" />
+    <Compile Include="VictoryMenu.cs" />
+    <Compile Include="WeatherColors.cs" />
+    <Compile Include="WeatherParticles.cs" />
+    <Compile Include="WeatherSet.cs" />
+    <Compile Include="WeatherSpecialEffect.cs" />
+    <Compile Include="WeatherUI.cs" />
+    <Compile Include="WebLink.cs" />
+    <Compile Include="WebLinkButton.cs" />
+    <Compile Include="WeightAttribute.cs" />
+    <Compile Include="WeightBar.cs" />
+    <Compile Include="WoundAlert.cs" />
+    <Compile Include="WoundSeverity.cs" />
+    <Compile Include="WoundSeverityMappings.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
